@@ -1,0 +1,35 @@
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
+# IDE and System Files
+.gradle/
+.idea/
+.vscode/
+.DS_Store
+*.iml
+
+# Build Output
+/app/build/
+/build/
+
+# Local Configuration (IMPORTANT: Never commit this file)
+local.properties
+
+# Dependencies (These should be downloaded, not stored in Git)
+/OpenCV-android-sdk/
+/web/node_modules/
+/web/dist/
+npm-debug.log
