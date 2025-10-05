@@ -1,0 +1,14 @@
+{
+  "name": "edge-web-viewer",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
