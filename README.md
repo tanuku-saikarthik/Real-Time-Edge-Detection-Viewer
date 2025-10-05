@@ -30,16 +30,52 @@ Captures camera frames, processes them in **C++ via JNI**, renders them with **O
 
 ---
 
-## 📷 Screenshots / GIF
+## 📷 Demo Showcase
 
-*Include your app screenshots or GIF here.*
-
-Example placeholder:
-
-![App Screenshot](web/static/sample_frame.png)
+### 🏸 1️⃣ Real-time Edge Detection — *Badminton Racket Demo*
+<p align="center">
+  <img src="screenshot_gifs\badminton-bat-edge_detect.gif" alt="Edge Detection on Badminton Racket" width="480"/>
+  <br/>
+  <em>Edges captured and processed in real-time — contours of the racket and background clearly detected.</em>
+</p>
 
 ---
 
+### ✋ 2️⃣ Real-Time Motion — *Hand Movement Demo*
+<p align="center">
+  <img src="screenshot_gifs\hand-edge_detect.gif" alt="Real-time Edge Detection on Hand Movement" width="480"/>
+  <br/>
+  <em>Demonstrating real-time detection speed and stability while the hand moves across the frame.</em>
+</p>
+
+---
+
+### 💻 3️⃣ Real-Time Motion — *Laptop Edge Detection Demo*
+<p align="center">
+  <img src="screenshot_gifs\laptop-edge_detect.gif" alt="Edge Detection on Laptop Surface" width="480"/>
+  <br/>
+  <em>Edge contours of the laptop surface and keyboard — processed via native C++ OpenCV and rendered through OpenGL ES.</em>
+</p>
+
+---
+
+### 📱 4️⃣ App Screenshot — *Edge Detection Output UI*
+<p align="center">
+  <img src="screenshot_gifs/screenshot.jpg" alt="App Screenshot showing edge detection result" width="300"/>
+  <br/>
+  <em>Processed frame displayed within Android app’s OpenGL texture view.</em>
+</p>
+
+---
+
+### 🌐 5️⃣ Web Viewer — *Static Frame Display*
+<p align="center">
+  <img src="screenshot_gifs/web-screenshot.jpg" alt="Web Viewer Screenshot" width="400"/>
+  <br/>
+  <em>TypeScript + Node.js based web viewer displaying exported processed frame.</em>
+</p>
+
+---
 ## ⚙ Setup Instructions (Android + Web, NDK & OpenCV)
 
 ### 1️⃣ Prerequisites
