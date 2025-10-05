@@ -119,18 +119,10 @@ mv gl app/src/main/cpp/
 ```
 
 3. **Update CMakeLists.txt**  
-Ensure OpenCV paths are set correctly using `local.properties` if needed:
-
+Ensure OpenCV paths are set correctly using `local.properties` if needed.
+If your OpenCV SDK is outside app, make sure the path is correct relative to jni/:
 ```cmake
-add_library(edge_detector SHARED
-    app/src/main/cpp/jni/edge_detector.cpp
-    app/src/main/cpp/gl/gl_renderer.cpp
-)
-
-# Include OpenCV SDK headers
-include_directories(${OpenCV_INCLUDE_DIRS})
-link_directories(${OpenCV_LIB_DIR})
-target_link_libraries(edge_detector ${OpenCV_LIBS})
+set(OpenCV_DIR "${CMAKE_SOURCE_DIR}/../../OpenCV-android-sdk/sdk/native/jni")
 ```
 
 4. **Update `app/build.gradle.kts`**
@@ -140,7 +132,7 @@ android {
     ...
     externalNativeBuild {
         cmake {
-            path = file("../jni/CMakeLists.txt")
+            path = file("../cpp/jni/CMakeLists.txt")
             version = "3.22.1"
         }
     }
